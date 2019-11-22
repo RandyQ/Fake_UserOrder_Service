@@ -1,0 +1,23 @@
+{
+  "name": "fake_userorder_service",
+  "version": "1.0.0",
+  "description": "Used to make orders on the ordering service - a part of a test harness",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./app.js",
+    "test": "TCS"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RandyQ/Fake_UserOrder_Service.git"
+  },
+  "author": "Randy Quimby",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RandyQ/Fake_UserOrder_Service/issues"
+  },
+  "homepage": "https://github.com/RandyQ/Fake_UserOrder_Service#readme",
+  "dependencies": {
+    "axios": "^0.19.0"
+  }
+}
