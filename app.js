@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(require('body-parser').json());
 
 app.get('/start', function (req, res) {
-    setInterval(() => axios.post('http://ordering:80/purchase', {
+    setInterval(() => axios.post('http://ordering:3000/purchase', {
         item: 'Hotdog',
         quantity: '10'
     })
