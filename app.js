@@ -10,6 +10,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // Handle JSON in the body
 app.use(require('body-parser').json());
 
+// Route to start the fake ordering service.  Repeats orders for test harness
 app.get('/start', function (req, res) {
     setInterval(() => axios.post('http://ordering:3000/purchase', {
         item: 'Hotdog',
