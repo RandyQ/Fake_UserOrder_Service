@@ -25,11 +25,6 @@ app.get('/start', function (req, res) {
     res.status(200).send("Fake Ordering Service has been initiated...");
 });
 
-function test() {
-
-    return 0;
-}
-
 // 404 catch-all handler (middleware)
 app.use(function (req, res, next) {
     res.status(404);
